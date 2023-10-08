@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cookbook</title>
+    <style>
+   
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #673AB7; /* Purple background */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #512DA8; /* Darker purple background */
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .recipe-card {
+            background-color: #E1BEE7; /* Pastel purple background */
+            border: 1px solid #BA68C8; /* Lighter purple border */
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 1280px;
+        }
+
+        .recipe-card h2 {
+            color: #673AB7; /* Dark purple text color */
+        }
+
+        .recipe-card p {
+            margin-top: 1rem;
+        }
+
+        .instructions {
+            background-color: #FFFFFF; /* White background for instructions */
+            padding: 1rem;
+            margin-top: 1rem;
+            border: 1px solid #DDDDDD; /* Light gray border */
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #673AB7; /* Purple background */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>SAVORFUL CREATIONS</h1>
+    </header>
+
+    <section id="search">
+        <h2>Search Recipes</h2>
+        <input type="text" id="searchInput" placeholder="Search by keywords or ingredients">
+        <button onclick="searchRecipes()">Search</button>
+    </section>
+
+    <section id="results">
+    
+        <ul id="recipeList">
+            <!-- Display search results here -->
+        </ul>
+    </section>
+
+    <section id="filters">
+        <h2>Filters</h2>
+        <label>Cuisine:
+            <select id="cuisineFilter">
+                <option value="North Indian">North Indian</option>
+                <option value="Mexican">Mexican</option>
+                <option value="South Indian">South Indian</option>
+                
+                <!-- Add more cuisine options as needed -->
+            </select>
+        </label>
+
+        <label>Cost:
+            <select id="costFilter">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </label>
+
+        <label>Preparation Time:
+            <select id="timeFilter">
+                <option value="short">Short</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+            </select>
+        </label>
+    </section>
+
+    <script>
+        function searchRecipes() {
+            // Implement your search functionality here
+            // You can use JavaScript to fetch data from a server or display hardcoded recipes based on user input
+            // Update the #recipeList with search results
+        }
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Light gray background */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #673AB7; /* Purple background */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #512DA8; /* Darker purple background */
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .recipe-card {
+            background-color: #E1BEE7; /* Pastel purple background */
+            border: 1px solid #BA68C8; /* Lighter purple border */
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 1280px;
+        }
+
+        .recipe-card h2 {
+            color: #673AB7; /* Dark purple text color */
+        }
+
+        .recipe-card p {
+            margin-top: 1rem;
+        }
+
+        .instructions {
+            background-color: #FFFFFF; /* White background for instructions */
+            padding: 1rem;
+            margin-top: 1rem;
+            border: 1px solid #DDDDDD; /* Light gray border */
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #673AB7; /* Purple background */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+
+ 
+
+    <main>
+        <div class="recipe-card">
+            <h2>Roasted Peppers And Mushroom Tortilla Pizza</h2>
+            <img src="tortilla pizza.jpg" alt="Recipe 1">
+            <li>Time=Short</li>
+            <li>Cost=Medium</li>
+            <li>Cusine=Mexican</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Tortillas</li>
+                <li>Extra Virgin Olive Oil</li>
+                <li>Mozzarella cheese</li>
+                <li>Red Yellow or Green Bell Pepper (Capsicum)</li>
+                <li>Button mushroom</li>
+                <li>Kalmatta olives</li>
+                <li>Onions</li>
+                
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Turn your oven setting to broiler and keep it ready.</li>
+                    <li>Grease your cast iron skillet with some olive oil and heat it over high heat. When it starts to shimmer, bring down the heat to medium.</li>
+                    <li>Add olive oil and minced garlic to the marinara sauce and stir to combine. Keep aside.</li>
+                    <li>Place one tortilla on the cast iron skillet.</li>
+                    <li>Spread a thin layer of marinara sauce over the tortilla.</li>
+                    <li>Spread the cheese as needed.</li>
+                    <li>When the cheese starts to melt, add in the toppings which include onion, mushrooms, olives, and bell peppers.</li>
+                    <li>Shift the cast iron skillet to the oven which is already under the broiler setting.</li>
+                    <li>When you see the cheese all melted and the top starting to brown, remove and slice to serve.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Spicy Grilled Pineapple Salsa</h2>
+            <img src="pineapple.jpg" alt="Recipe 2">
+            <li>Time=Short</li>
+            <li>Cost=Low</li>
+            <li>Cusine=Mexican</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Extra Virgin Olive Oil</li>
+                <li>Pineapple</li>
+                <li>White Onion</li>
+                <li>Red Yellow and Green Bell Peppers (Capsicum)</li>
+                <li>Pickled Jalapenos</li>
+                <li>Coriander (Dhania) Leaves</li>
+                <li>Mint Leaves (Pudina)</li>
+                <li>Salt</li>
+                <li>Lemon juice</li>
+                <li>Paprika powder</li>
+              
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Prep all the ingredients and finely chop them.</li>
+                    <li>Heat oil in a grill pan over medium heat.</li>
+                    <li>Place the sliced pineapple in the pan and sprinkle with salt.</li>
+                    <li>Cover the pan and cook the pineapple until it's soft and has a lightly grilled texture. Keep turning it around until golden brown on both sides.</li>
+                    <li>Allow the grilled pineapple to cool and then finely chop it.</li>
+                    <li>In a large mixing bowl, combine the grilled pineapple, onions, jalapenos, bell peppers, coriander leaves, and mint leaves. Mix well.</li>
+                    <li>Finally, add salt, lemon juice, and smoked paprika to make the Grilled Pineapple Salsa. Mix thoroughly.</li>
+                    <li>Refrigerate the Grilled Pineapple Salsa for at least 2 hours.</li>
+                    <li>Serve the Spicy Grilled Pineapple Salsa chilled as an appetizer alongside a meal.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- Add more recipe cards as needed -->
+        <div class="recipe-card">
+            <h2>Mexican Green Sauce</h2>
+            <img src="greenSause.jpg" alt="Recipe 1">
+            <li>Time=Short</li>
+            <li>Cost=Low</li>
+            <li>Cusine=Mexican</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Coriander (Dhania) Leaves</li>
+                <li>Tahini</li>
+                <li>Lemon juice</li>
+                <li>Extra Virgin Olive Oil</li>
+                <li>Honey</li>
+                <li>Ginger</li>
+                <li>Salt</li>
+                
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Add all the ingredients (coriander, tahini, lemon juice, olive oil, honey, ginger, and salt) into a mixer.</li>
+                    <li>Grind the ingredients into a coarse mixture.</li>
+                    <li>If you prefer a thinner sauce, you can add a bit of water to adjust the consistency.</li>
+                    <li>Serve the Mexican Green Sauce alongside your favorite dishes like tacos, nachos, or as a refreshing dip for appetizers.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <h2>Mango Tomato Bean Salsa Recipe</h2>
+            <img src="mangoBean.jpg" alt="Recipe 1">
+            <li>Time=Short</li>
+            <li>Cost=Medium</li>
+            <li>Cusine=Mexican</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Mango (Ripe)</li>
+                <li>Tomato</li>
+                <li>Onion</li>
+                <li>Rajma (Large Kidney Beans)</li>
+                <li>Pickled Jalapenos</li>
+                <li>Mint Leaves (Pudina)</li>
+                <li>Lemon juice</li>
+                <li>Coriander (Dhania) Leaves</li>
+                <li>Salt</li>
+                <li>Cumin powder (Jeera)</li>
+                <li>Red Chilli powder</li>
+                
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Prep all the ingredients and keep them ready.</li>
+                    <li>Soak the rajma for at least 8 hours.</li>
+                    <li>Cook the rajma in the pressure cooker for about 35 minutes until soft and well cooked. Allow the pressure to release naturally.</li>
+                    <li><strong>Tip:</strong> It's a good idea to cook extra rajma for this salsa and keep it refrigerated for quick preparation.</li>
+                    <li>In a large mixing bowl, combine the chopped ripe mangoes, onion, tomato, boiled rajma, jalapenos, coriander, and mint leaves.</li>
+                    <li>Season the mango bean salsa with cumin powder, red chili powder, salt, lemon juice, and Tabasco sauce.</li>
+                    <li>Mix the salsa well and serve chilled.</li>
+                    <li>Serve Mango Tomato Bean Salsa as an appetizer or alongside dishes like tacos or serve it as a simple salad with other Mexican appetizers.</li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+        <div class="recipe-card">
+            <h2>Rajma Kofta In Milk And Poppy Seed Gravy</h2>
+            <img src="Rajma.jpg" alt="Recipe 1">
+            <li>Time=Medium</li>
+            <li>Cost=High</li>
+            <li>Cusine=North Indian</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Rajma (Large Kidney Beans)</li>
+                <li>Cashew nuts</li>
+                <li>Sultana Raisins</li>
+                <li>Asafoetida (hing)</li>
+                <li>Cumin seeds (Jeera)</li>
+                <li>Gram flour (besan)</li>
+                <li>Coriander (Dhania) Leaves</li>
+                <li>Poppy seeds</li>
+                <li>Fresh cream</li>
+                <li>Milk</li>
+                <li>Water</li>
+                <li>Salt</li>
+                <li>Saffron strands</li>
+               
+                
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Prepare the koftas first by soaking the rajma overnight and pressure cooking it with salt until soft.</li>
+                    <li>Blend the boiled rajma, besan, cashew, raisins, chili powder, hing, coriander leaves, and salt in a food processor. Adjust seasoning.</li>
+                    <li>Spread the mashed spiced rajma on a thali or a large plate. Make small round balls of rajma kofta with your palm.</li>
+                    <li>Heat a frying pan with half ghee and fry the kofta balls for about 10 minutes. Set aside.</li>
+                    <li>Alternatively, heat a kuzhi paniyaram pan, add a few drops of oil into each cavity, and place the balls in each cavity. Rotate them for even browning.</li>
+                    <li>Take a kadai and heat ghee, add cumin, and allow it to sizzle. Add milk, cream, poppy seed paste, garam masala powder, and salt. Add water if needed.</li>
+                    <li>Cook until the mixture comes to a boil, add the koftas, and switch off heat after half a minute.</li>
+                    <li>Serve with your favorite garnish like saffron or coriander leaves.</li>
+                    <li>Serve Rajma Kofta In Milk And Poppy Seed Gravy Recipe along with naan and rice for lunch or dinner.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Schezwan Style Chinese Veg Samosa</h2>
+            <img src="samosa.jpg" alt="Recipe 2">
+            <li>Time=Medium</li>
+            <li>Cost=Medium</li>
+            <li>Cusine=North Indian</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Whole Wheat Flour</li>
+                <li>Sooji (Semolina/ Rava)</li>
+                <li>Ajwain (Carom seeds)</li>
+                <li>Salt</li>
+                <li>Extra Virgin Olive Oil</li>
+                <li>Carrot (Gajjar)</li>
+                <li>Green Bell Pepper (Capsicum)</li>
+                <li>Cabbage (Patta Gobi/ Muttaikose)</li>
+                <li>Ginger</li>
+                <li>Garlic</li>
+                <li>Green Chilli</li>
+                <li>Spring Onion Greens</li>
+                <li>Black pepper powder</li>
+                
+              
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Prep all the ingredients and keep them ready.</li>
+                    <li><strong>For the Dough:</strong>
+                        <ul>
+                            <li>Combine all the dough ingredients in a large mixing bowl.</li>
+                            <li>Rub the olive oil into the flour until you get coarse crumbs.</li>
+                            <li>Add little water at a time and knead to make a firm and smooth dough.</li>
+                            <li>Cover the dough and let it rest while preparing the filling.</li>
+                        </ul>
+                    </li>
+                    <li><strong>For the Filling:</strong>
+                        <ul>
+                            <li>Heat olive oil in a wok or a heavy-bottomed pan.</li>
+                            <li>Add ginger, garlic, green chilies, and spring onions. Stir fry until fragrant.</li>
+                            <li>Add carrots, beans, capsicum, and cabbage. Stir fry on high heat until cooked through but firm.</li>
+                            <li>Add cooked and chopped noodles, chili sauce, salt, and pepper. Stir until well combined. Adjust seasoning.</li>
+                            <li>Remove from heat and let the filling cool.</li>
+                        </ul>
+                    </li>
+                    <li>Preheat the oil for deep frying the samosas.</li>
+                    <li>Divide the samosa dough into 12 equal portions. Roll each portion into a small square after dusting it with flour.</li>
+                    <li>Place a small portion of the Chinese filling into the rolled out dough.</li>
+                    <li>Fold it like a wonton by bringing the edges together and seal the edges by pinching them well.</li>
+                    <li>Make similar Szechuan Style Chinese Samosas with the rest of the dough and filling.</li>
+                    <li>Deep fry the samosas until crisp and golden brown.</li>
+                    <li>Remove from the oil and serve hot.</li>
+                    <li>Serve the Veg Chinese Samosa as an appetizer or evening tea-time snack for parties.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        
+        <div class="recipe-card">
+            <h2>Matar Butter Masala</h2>
+            <img src="matarButter .jpg" alt="Recipe 2">
+            <li>Time=Short</li>
+            <li>Cost=High</li>
+            <li>Cusine=North Indian</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Cashew nuts</li>
+                <li>Onions</li>
+                <li>Ginger</li>
+                <li>Garlic</li>
+                <li>Green Chilli</li>
+                <li>Green peas (Matar)</li>
+                <li>Butter (Salted)</li>
+                <li>Bay leaf (tej patta)</li>
+                <li>Turmeric powder (Haldi)</li>
+                <li>Kashmiri Red Chilli Powder</li>
+                <li>Coriander Powder (Dhania)</li>
+                <li>Tomatoes</li>
+                <li>Salt</li>
+                <li>Sugar</li>
+                <li>Fresh cream</li>
+                <li>Kasuri Methi (Dried Fenugreek Leaves)</li>
+                <li>Coriander (Dhania) Leaves</li>
+                
+                
+              
+            </ul>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Boil the peas in a pressure cooker with 1/2 cup of water and some salt for one whistle. Release the pressure immediately to retain the fresh green color. Set aside.</li>
+                    <li>Soak cashews in hot water for 15-20 minutes. Blend soaked cashews and water to make a smooth paste. Set aside.</li>
+                    <li>In a mixer jar, combine onions, ginger, garlic, and green chili. Grind into a fine paste. Set aside.</li>
+                    <li>Roughly chop the tomatoes and blend to make a puree.</li>
+                    <li>Heat butter in a heavy-bottomed pan over medium heat. Add bay leaf and onion paste. Sauté for 2-3 minutes, stirring continuously.</li>
+                    <li>Stir in salt, turmeric powder, coriander powder, and red chili powder. Sauté for 30-40 seconds.</li>
+                    <li>Add tomato puree, cover, and cook for 5 minutes or until tomatoes are bright red and cooked completely.</li>
+                    <li>Stir in boiled peas along with water. Adjust gravy consistency by adding more water if required.</li>
+                    <li>Add sugar, kasuri methi, and fresh cream. Bring to a brisk boil and turn off the heat.</li>
+                    <li>Adjust salt and seasoning, stir in freshly chopped coriander leaves.</li>
+                    <li>Transfer Matar Butter Masala to a serving bowl and serve hot with naan and rice for a delightful meal.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <h2>Kurkuri Bhindi And Onion Masala</h2>
+            <img src="bhindi.jpg" alt="Recipe 2">
+            <li>Time=Medium</li>
+            <li>Cost=Medium</li>
+            <li>Cusine=North Indian</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Bhindi (Lady Finger/Okra)</li>
+                <li>Gram flour (besan)</li>
+                <li>Red Chilli powder</li>
+                <li>Turmeric powder (Haldi)</li>
+                <li>Coriander Powder (Dhania)</li>
+                <li>Amchur (Dry Mango Powder)</li>
+                <li>Salt</li>
+                <li>Water</li>
+                <li>Oil</li>
+                <li>Cumin seeds (Jeera)</li>
+                <li>Mustard seeds (Rai/ Kadugu)</li>
+                <li>Asafoetida (hing)</li>
+                <li>Green Chilli</li>
+                <li>Onions</li>
+                <li>Coriander (Dhania) Leaves</li>
+            </ul>
+            
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Firstly, make the Kurkuri Bhindi:</li>
+                    <ul>
+                        <li>Take a bowl, add sliced bhindi, besan, 1/2 teaspoon red chilli powder, 1/2 teaspoon turmeric powder, 1/2 teaspoon coriander powder, 1/2 teaspoon amchur powder, required salt, and a little water. Mix everything properly.</li>
+                        <li>Heat oil in a pan and fry the coated bhindis until crispy. Remove them and place on absorbent paper to absorb extra oil. Set aside.</li>
+                    </ul>
+                    <li>In a different wok, heat oil and add cumin seeds, mustard seeds, hing, and green chillies. Saute for 10 to 15 seconds.</li>
+                    <li>Add ginger-garlic paste and sauté for a minute, then add chopped onions. Cook until onions become soft and translucent.</li>
+                    <li>Add remaining red chilli powder, turmeric powder, coriander powder, and required salt. Mix well, cover the wok, and let it cook for 3 to 4 minutes.</li>
+                    <li>Add the fried kurkuri bhindi and mix properly. Cook for two more minutes, then switch off the stove and garnish with chopped coriander leaves.</li>
+                    <li>Serve Kurkuri Bhindi And Onion Masala along with roti and rice for a weekday meal.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        
+        <div class="recipe-card">
+            <h2>Kela Matar ki Sabzi </h2>
+            <img src="kelaMatar.jpg" alt="Recipe 2">
+            <li>Time=Medium</li>
+            <li>Cost=Medium</li>
+            <li>Cusine=North Indian</li>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Raw Banana</li>
+                <li>Green Peas (Matar)</li>
+                <li>Cumin Seeds (Jeera)</li>
+                <li>Green Chilli</li>
+                <li>Turmeric Powder (Haldi)</li>
+                <li>Coriander Powder (Dhania)</li>
+                <li>Cumin Powder (Jeera)</li>
+                <li>Amchur (Dry Mango Powder)</li>
+                <li>Lemon</li>
+                <li>Oil</li>
+                <li>Coriander (Dhania) Leaves</li>
+                <li>Salt</li>
+            </ul>
+            
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <p><ul>
+                    <li>Cut the raw bananas into half and pressure cook them with 1/4 cup of water for 2 to 3 whistles. Allow the pressure to release naturally.</li>
+                    <li>Peel the skin from the cooked raw banana and slice them into roundels.</li>
+                    <li>Heat oil in a kadai over medium heat. Add cumin seeds and green chilies. When they sizzle, add salt, coriander powder, cumin powder, amchur powder, garam masala powder, and turmeric powder. Mix well.</li>
+                    <li>Add boiled peas and cooked raw banana slices. Mix well.</li>
+                    <li>Sprinkle some water, cover, and cook the Kela Matar ki Sabzi until all the masalas coat well (for about 4 to 5 minutes).</li>
+                    <li>Check the salt and spices, adjust to taste. Add lemon juice and chopped coriander leaves. Stir well.</li>
+                    <li>Serve the Kela Matar ki Sabzi with roti, paratha, salad, and steamed rice.</li>
+                    <li>This diabetic-friendly dish can be served along with yogurt, salad, and buttermilk for a balanced meal.</li>
+                </ul>
+              </p>
+            </div>
+        <div>
+
+            <div class="recipe-card">
+                <h2>Thakkali Gotsu </h2>
+                <img src="thakkali.jpg" alt="Recipe 2">
+                <li>Time=Short</li>
+                <li>Cost=High</li>
+                <li>Cusine=South Indian</li>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>Sesame (Gingelly) Oil</li>
+                    <li>Mustard seeds (Rai/ Kadugu)</li>
+                    <li>Curry leaves</li>
+                    <li>Garlic</li>
+                    <li>Pearl onions (Sambar Onions)</li>
+                    <li>Tomatoes</li>
+                    <li>Tamarind</li>
+                    <li>Turmeric powder (Haldi)</li>
+                    <li>Salt</li>
+                    <li>Jaggery</li>
+                </ul>
+                
+                
+                <div class="instructions">
+                    <h3>Instructions:</h3>
+                    <p><ul>
+                        <li>Prepare all the ingredients and keep them ready.</li>
+                        <li>Soak the tamarind in hot water for 20 minutes. Extract about 1/2 cup of thick tamarind water.</li>
+                        <li>Roughly chop the tomatoes and pulse them in a mixer grinder for a chunky sauce, not a fine puree.</li>
+                        <li>Heat oil in a pressure cooker over medium heat. Add mustard seeds and allow them to crackle. Add curry leaves, garlic, and onions. Sauté until onions turn tender and translucent.</li>
+                        <li>Add crushed tomatoes, tamarind water, turmeric powder, sambar powder, salt, and jaggery. Stir and pressure cook for 2 whistles.</li>
+                        <li>Turn off the heat and allow the pressure to release naturally. Open the cooker and give the Tomato Gotsu a stir.</li>
+                        <li>Check the salt and spices, adjust to taste. Transfer Tomato Gotsu to a serving bowl and serve hot.</li>
+                        <li>Serve Tomato Gotsu with dosa and chutney for breakfast.</li>
+                    </ul>
+                    
+                  </p>
+                </div>
+            <div>      
+    </main>
+
+
+</body>
